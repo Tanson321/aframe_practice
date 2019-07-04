@@ -1,27 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.text{
-    width: 1000px; 
-    height: 1000px; 
-    position: fixed; 
-    left: 0; 
-    top: 0; 
-    z-index: -1; 
-    overflow: hidden;
-}
-
-#element{
-    color: rgba(255,255,255,0);
-    margin: 0 auto;
-    font-size: 500px;
-    padding-left: 10%;
-    background-color: (255,255,255);
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .a-enter-vr{
     display: none;
 }
