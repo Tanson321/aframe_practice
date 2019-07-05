@@ -1,17 +1,8 @@
-//var linkElements = document.getElementsByClassName("link-object");
-
-//for (var i = 0; i < linkElements.length; i++) {
-//	linkElements[i].addEventListener('click', function() {
-//		var link = this.getAttribute('data-link');
-//		location.href = link;
-//	}, false);
-//}
-
 var driverDone = function(){
     console.log('hey');
     var scene = document.querySelector('a-scene');
     var plane = document.createElement('a-plane');
-    plane.setAttribute('position', '-1.8 0.4 0.9');
+    plane.setAttribute('position', '-1.8 1 0.9');
     plane.setAttribute('rotation', '-30 110 0');
     plane.setAttribute('width', '1');
     plane.setAttribute('height', '0.5');
@@ -20,10 +11,28 @@ var driverDone = function(){
     scene.appendChild(plane);
 
     var text = document.createElement('a-text');
-    text.setAttribute('position', '-1.8 0.4 0.9');
+    text.setAttribute('position', '-1.8 1 0.9');
     text.setAttribute('rotation', '-30 110 0');
-    text.setAttribute('value', 'Done!');
+    text.setAttribute('value', 'YES!');
     text.setAttribute('color', 'black');
     text.setAttribute('align', 'center');
     scene.appendChild(text);
-}
+
+    var clear = document.getElementById('direction');
+    clear.innerHTML = '<p>良くぞ見つけた！</p>';
+
+};
+
+const text = document.getElementById('text');
+
+window.addEventListener('load', function(){
+    text.textContent ='偽物の椅子を探せ';
+    $('#text').css('text-align', 'center');
+    $('#text').css('font-size','22px');
+    $('#text').css('line-height','12vh');
+});
+
+$('.select').click(function(){
+    $('.introduction').css('display', 'none');
+    $('.direction').show();
+});

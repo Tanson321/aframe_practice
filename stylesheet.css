@@ -1,3 +1,109 @@
+body{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.parent{
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.direction{
+    width: 90vw;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
+
+.direction p{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+
+.introduction{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+}
+
+.modal-wrapper{
+    width: 95vw;
+    height: 30vh;
+    background-color: rgba(150, 150, 150, 0.3);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 00%, 100% 100%, 100% 100%, 00% 100%, 0% 100%, 0% 0%);
+    position: relative;
+}
+
+.modal{
+    width: 90vw;
+    height: 25vh;
+    background-image: linear-gradient(0deg, rgba(8, 174, 234, 0.8) 0%, rgba(42, 245, 154, 0.8) 100%);
+    clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 90%, 90% 100%, 0% 100%, 0 100%, 0 10%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select{
+    width: 25%;
+    height: 25px;
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    z-index: 2;
+    border-radius: 5px;
+    transform: translate(-50%, 0%);
+}
+
+.select p{
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    line-height: 27px;
+    z-index: 1;
+}
+
+.text{
+    padding: 5px;
+    color: white;
+}
+
+.text p{
+    text-align: center;
+}
+
+.vr-scene{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+}
+
+a-scene {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
 .a-enter-vr{
     display: none;
 }
