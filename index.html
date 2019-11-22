@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="aframe.min.js"></script>
 
     <link rel="stylesheet" href="stylesheet.css">
 
@@ -30,10 +30,12 @@
 
     <div class="direction" id="direction">
         <p>カーソルを合わせて画面をタップ！</p>
+        <!-- <p>カーソルを合わせてトリガーを引け！</p> -->
     </div>
 
     <div class="vr-scene">
     <a-scene embedded id="scene">
+        <!-- <a-entity id="ctl" laser-controls></a-entity> -->
 
         <a-assets>
             <img src="office.JPG" id="sky">

@@ -26,7 +26,7 @@ var driverDone = function(){
 const text = document.getElementById('text');
 
 window.addEventListener('load', function(){
-    text.textContent ='偽物の椅子を探せ';
+    text.textContent ='一番小さい椅子を探せ！';
     $('#text').css('text-align', 'center');
     $('#text').css('font-size','22px');
     $('#text').css('line-height','12vh');
@@ -36,3 +36,11 @@ $('.select').click(function(){
     $('.introduction').css('display', 'none');
     $('.direction').show();
 });
+
+// const ctl = document.getElementById("ctl");
+// const timer = setInterval(() => {
+//   const point = new THREE.Vector3(0, 0, -1);
+//   ctl.object3D.localToWorld(point);
+//   const worldDirection = point.sub(ctl.object3D.position);
+//   txt.setAttribute("value", worldDirection.x.toFixed(2) + ", " + worldDirection.y.toFixed(2) + ", " + worldDirection.z.toFixed(2));
+// }, 100);
